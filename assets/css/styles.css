@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #418251;
+  background-image: url('../images/weather-bg-light.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.app-wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+.header input{
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #313131;
+  border-radius: 16px 0 16px 0;
+  border-bottom: 3px solid #df8e00;
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.2s ease-in-out;
+}
+
+.header input:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+main{
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location-wrapper .city-wrapper{
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.location-wrapper .date-wrapper{
+  color: #fff;
+  font-size: 20px;
+}
