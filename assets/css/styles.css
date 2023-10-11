@@ -58,6 +58,10 @@ main{
   text-align: center;
 }
 
+.location-wrapper{
+  margin-top: 50px;
+}
+
 .location-wrapper .city-wrapper{
   color: #fff;
   font-size: 32px;
